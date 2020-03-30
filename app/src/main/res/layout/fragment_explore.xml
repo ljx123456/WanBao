@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#212123"
+    android:orientation="vertical">
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="104dp"-->
+        <!--android:background="#FCC725">-->
+
+    <!--</RelativeLayout>-->
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="76dp"
+        android:id="@+id/swip">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/scroll_top">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="104dp"-->
+                        <!--android:background="#FCC725">-->
+
+                        <!--</RelativeLayout>-->
+
+                        <wanbao.yongchao.com.wanbao.ui.main.utils.explore_banner.ConvenientBanner
+                            android:layout_width="match_parent"
+                            android:layout_height="175dp"
+
+                            android:background="@drawable/banner_explore_bg"
+                            android:id="@+id/banner"></wanbao.yongchao.com.wanbao.ui.main.utils.explore_banner.ConvenientBanner>
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="24dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/shop_ic"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="12dp"
+                            android:paddingLeft="12dp"
+                            android:gravity="center_vertical"
+                            android:text="全部"
+                            android:textColor="#a6ffffff"
+                            android:textSize="13dp"
+                            android:id="@+id/tv_shop_more"/>
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="144dp"
+                        android:layout_marginLeft="12dp"
+                        android:id="@+id/recy_shop"></android.support.v7.widget.RecyclerView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="24dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/landmark_ic"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="12dp"
+                            android:paddingLeft="12dp"
+                            android:gravity="center_vertical"
+                            android:text="全部"
+                            android:textColor="#a6ffffff"
+                            android:textSize="13dp"
+                            android:id="@+id/tv_landmark_more"/>
+                    </RelativeLayout>
+                    <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="160dp"-->
+                    <!--android:layout_marginLeft="12dp"-->
+                    <!--android:id="@+id/recy_landmark"></android.support.v7.widget.RecyclerView>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:id="@+id/layout_landmark"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="172dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/banner_explore_bg"
+                                android:id="@+id/layout_land1">
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:riv_corner_radius="4dp"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/iv_land1"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:text=""
+                                    android:textColor="#a6ffffff"
+                                    android:textSize="12dp"
+                                    android:id="@+id/tv_land_num1"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_above="@+id/tv_land_num1"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:text=""
+                                    android:textColor="#ffffffff"
+                                    android:textSize="14dp"
+                                    android:id="@+id/tv_land_name1"/>
+                            </RelativeLayout>
+                            <View
+                                android:layout_width="7dp"
+                                android:layout_height="match_parent"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/banner_explore_bg"
+                                    android:id="@+id/layout_land2">
+                                    <com.makeramen.roundedimageview.RoundedImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        app:riv_corner_radius="4dp"
+                                        android:scaleType="centerCrop"
+                                        android:id="@+id/iv_land2"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_marginBottom="8dp"
+                                        android:layout_marginLeft="6dp"
+                                        android:text=""
+                                        android:textColor="#a6ffffff"
+                                        android:textSize="12dp"
+                                        android:id="@+id/tv_land_num2"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_above="@+id/tv_land_num2"
+                                        android:layout_marginBottom="2dp"
+                                        android:layout_marginLeft="6dp"
+                                        android:text=""
+                                        android:textColor="#ffffffff"
+                                        android:textSize="14dp"
+                                        android:id="@+id/tv_land_name2"/>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="6dp"/>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/banner_explore_bg"
+                                    android:id="@+id/layout_land3">
+                                    <com.makeramen.roundedimageview.RoundedImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        app:riv_corner_radius="4dp"
+                                        android:scaleType="centerCrop"
+                                        android:id="@+id/iv_land3"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_marginBottom="8dp"
+                                        android:layout_marginLeft="6dp"
+                                        android:text=""
+                                        android:textColor="#a6ffffff"
+                                        android:textSize="12dp"
+                                        android:id="@+id/tv_land_num3"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_above="@+id/tv_land_num3"
+                                        android:layout_marginBottom="2dp"
+                                        android:layout_marginLeft="6dp"
+                                        android:text=""
+                                        android:textColor="#ffffffff"
+                                        android:textSize="14dp"
+                                        android:id="@+id/tv_land_name3"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="6dp"/>-->
+
+                        <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="117dp"-->
+                        <!--android:background="@drawable/banner_explore_bg"-->
+                        <!--android:id="@+id/layout_land4">-->
+                        <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--app:riv_corner_radius="4dp"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:id="@+id/iv_land4"-->
+                        <!--/>-->
+
+                        <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_marginBottom="8dp"-->
+                        <!--android:layout_marginLeft="6dp"-->
+                        <!--android:text="32198人想去"-->
+                        <!--android:textColor="#a6ffffff"-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:id="@+id/tv_land_num4"/>-->
+                        <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_above="@+id/tv_land_num4"-->
+                        <!--android:layout_marginBottom="2dp"-->
+                        <!--android:layout_marginLeft="6dp"-->
+                        <!--android:text="九眼桥"-->
+                        <!--android:textColor="#ffffffff"-->
+                        <!--android:textSize="14dp"-->
+                        <!--android:id="@+id/tv_land_name4"/>-->
+                        <!--</RelativeLayout>-->
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="24dp"
+                        android:id="@+id/layout_ye">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/ye_ic"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="12dp"
+                            android:paddingLeft="12dp"
+                            android:gravity="center_vertical"
+                            android:text="全部"
+                            android:textColor="#a6ffffff"
+                            android:textSize="13dp"
+                            android:id="@+id/tv_activities_screen"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/fl_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></RelativeLayout>
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="98dp"/>-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#212123"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="成都"
+            android:textColor="#d9ffffff"
+            android:textSize="15dp"
+            android:id="@+id/tv_city"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="54dp"
+            android:background="@drawable/edit_search_bg"
+            android:layout_centerVertical="true"
+            android:id="@+id/layout_search">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/signin_searchbox_icon_search"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="搜索"
+                android:textColor="#40ffffff"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="60dp"
+        android:background="#212123"
+        android:visibility="gone"
+        android:id="@+id/layout_title">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ye_ic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="全部"
+            android:textColor="#a6ffffff"
+            android:textSize="13dp"
+            android:id="@+id/tv_title_activities_screen"/>
+    </RelativeLayout>
+
+</RelativeLayout>

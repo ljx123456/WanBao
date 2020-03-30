@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="405dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:layout_marginLeft="12dp"-->
+        <!--android:layout_marginRight="12dp"-->
+        <!--android:background="@drawable/item_activity_bg">-->
+        <!---->
+        <!--<com.makeramen.roundedimageview.RoundedImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="234dp"-->
+            <!--app:riv_corner_radius_top_left="4dp"-->
+            <!--app:riv_corner_radius_top_right="4dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:id="@+id/iv_content"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:text="成都欢乐谷丨哈哈哈哈哈"-->
+            <!--android:textColor="#fffcc725"-->
+            <!--android:textSize="16dp"-->
+            <!--android:id="@+id/tv_title"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:text="七大捣鬼魔域，五大惊悚鬼屋，放肆尖叫，鬼才理你四项新奇玩法，一起神出鬼没，Hi爆激情万圣奇妙惊魂……"-->
+            <!--android:textColor="#a6ffffff"-->
+            <!--android:textSize="13dp"-->
+            <!--android:maxLines="2"-->
+            <!--android:ellipsize="end"-->
+            <!--android:id="@+id/tv_content"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:text="活动时间：2019/11/1"-->
+            <!--android:textColor="#73ffffff"-->
+            <!--android:textSize="14dp"-->
+            <!--android:id="@+id/tv_time"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:layout_marginTop="11.5dp"-->
+            <!--android:background="#40000000"/>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginRight="12dp">-->
+
+            <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                <!--android:layout_width="24dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="84dp"-->
+                <!--app:riv_oval="true"-->
+                <!--android:src="@mipmap/ic_user_df"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:id="@+id/iv_user5"/>-->
+
+            <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                <!--android:layout_width="24dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="63dp"-->
+                <!--app:riv_oval="true"-->
+                <!--android:src="@mipmap/ic_launcher_round"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:id="@+id/iv_user4"/>-->
+
+            <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                <!--android:layout_width="24dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="42dp"-->
+                <!--app:riv_oval="true"-->
+                <!--android:src="@mipmap/ic_user_df"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:id="@+id/iv_user3"/>-->
+
+            <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                <!--android:layout_width="24dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="21dp"-->
+                <!--app:riv_oval="true"-->
+                <!--android:src="@mipmap/ic_launcher_round"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:id="@+id/iv_user2"/>-->
+
+            <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                <!--android:layout_width="24dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--app:riv_oval="true"-->
+                <!--android:src="@mipmap/ic_user_df"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:id="@+id/iv_user1"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="2468人想去"-->
+                <!--android:textColor="#a6ffffff"-->
+                <!--android:textSize="13dp"-->
+                <!--android:drawableRight="@mipmap/signin_identity_business_right"-->
+                <!--android:drawablePadding="5dp"-->
+                <!--android:id="@+id/tv_num"/>-->
+
+
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/item_activity_bg">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="234dp">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="234dp"
+                app:riv_corner_radius_top_left="4dp"
+                app:riv_corner_radius_top_right="4dp"
+                android:scaleType="fitXY"
+                android:id="@+id/iv_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/explorepage_no1"
+                android:id="@+id/iv_sort"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/layout_explore_activity_mask_bg"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:id="@+id/layout_want">
+                <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="84dp"
+                app:riv_oval="true"
+                android:src="@mipmap/ic_user_df"
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_user5"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="63dp"
+                app:riv_oval="true"
+                android:src="@mipmap/ic_launcher_round"
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_user4"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="42dp"
+                app:riv_oval="true"
+                android:src="@mipmap/ic_user_df"
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_user3"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21dp"
+                app:riv_oval="true"
+                android:src="@mipmap/ic_launcher_round"
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_user2"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                app:riv_oval="true"
+                android:src="@mipmap/ic_user_df"
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_user1"/>
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="2468人想去"
+                android:textColor="#a6ffffff"
+                android:textSize="13dp"
+                android:drawableRight="@mipmap/signin_identity_business_right"
+                android:drawablePadding="5dp"
+                android:id="@+id/tv_num"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:text="成都欢乐谷丨哈哈哈哈哈"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="#d9ffffff"
+            android:textSize="16dp"
+            android:id="@+id/tv_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="七大捣鬼魔域，五大惊悚鬼屋，放肆尖叫，鬼才理你四项新奇玩法，一起神出鬼没，Hi爆激情万圣奇妙惊魂……"
+            android:textColor="#a6ffffff"
+            android:textSize="13dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:id="@+id/tv_content"/>
+    </LinearLayout>
+</LinearLayout>

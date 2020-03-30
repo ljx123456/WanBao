@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212123</color>
+    <color name="colorPrimaryDark">#212123</color>
+    <color name="colorAccent">#FCC725</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="content_color">#6F4EFA</color>
+    <color name="fengexian">#FE849B</color>
+    <color name="fengexians">#FFC2CD</color>
+    <color name="toastBg">#A6000000</color>
+    <color name="toastColor">#ffffff</color>
+    <color name="false_color">#CCCCCC</color>
+
+</resources>

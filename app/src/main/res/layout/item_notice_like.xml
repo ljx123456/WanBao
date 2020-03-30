@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#212123">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="4dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20.5dp"
+            android:scaleType="centerCrop"
+            app:riv_oval="true"
+            android:id="@+id/iv_header"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="160dp"
+            android:layout_toRightOf="@+id/iv_header"
+            android:layout_marginLeft="8dp"
+            android:layout_alignTop="@+id/iv_header"
+            android:layout_marginTop="3dp"
+            android:text="锐雯锐雯锐雯锐雯锐雯锐雯锐雯锐雯"
+            android:textColor="#d9ffffff"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="16dp"
+            android:id="@+id/tv_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_name"
+            android:layout_marginLeft="6dp"
+            android:layout_alignTop="@+id/tv_name"
+            android:layout_marginTop="5dp"
+            android:text="20:12"
+            android:textColor="#73ffffff"
+            android:textSize="12dp"
+            android:id="@+id/tv_time"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="4dp"
+            android:layout_alignLeft="@+id/tv_name"
+            android:text="关注了你"
+            android:textColor="#a6ffffff"
+            android:textSize="14dp"
+            android:id="@+id/tv_tips"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="4dp"
+            android:id="@+id/iv_other"/>
+    </RelativeLayout>
+
+</LinearLayout>

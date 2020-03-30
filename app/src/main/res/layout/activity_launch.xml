@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#212123">
+    
+    <ImageView
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="136dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/logo_pic"/>
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="46dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="58dp"
+        android:src="@mipmap/logo_text"
+        android:scaleType="centerInside"/>
+
+    <View
+        android:layout_width="12dp"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="49.5dp"
+        android:background="#fcc725"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="城 市 新 奇 潮 活 动 咨 询 站"
+        android:textColor="#a6ffffff"
+        android:textSize="15dp"/>
+
+
+
+</RelativeLayout>

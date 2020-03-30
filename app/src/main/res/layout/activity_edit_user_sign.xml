@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#212123">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/navbar_button_back"
+            android:id="@+id/iv_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="个人说明"
+            android:textColor="#d9ffffff"
+            android:textSize="16dp"
+            android:id="@+id/tv_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="保存"
+            android:textColor="#fffcc725"
+            android:textSize="14dp"
+            android:id="@+id/tv_keep"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#2C2C2F"
+        android:layout_marginTop="12dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/inputStyle"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:gravity="top"
+            android:background="@null"
+            android:maxLength="50"
+            android:hint="添加个人说明，让大家更了解你"
+            android:textColorHint="#40ffffff"
+            android:textColor="#d9ffffff"
+            android:textSize="14dp"
+            android:id="@+id/edit_sign"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="6dp"
+            android:text="（0/50）"
+            android:textColor="#73ffffff"
+            android:textSize="12dp"
+            android:id="@+id/tv_num"/>
+    </RelativeLayout>
+
+</LinearLayout>

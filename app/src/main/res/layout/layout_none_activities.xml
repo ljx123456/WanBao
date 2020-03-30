@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212123"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂无相关内容"
+        android:textColor="#a6ffffff"
+        android:textSize="16dp"
+        />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="快去发布一些精彩动态，和大家互动一下吧~"-->
+        <!--android:textColor="#73ffffff"-->
+        <!--android:textSize="13dp"-->
+        <!--/>-->
+
+
+
+</LinearLayout>

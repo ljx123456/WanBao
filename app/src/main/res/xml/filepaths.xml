@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+
+    <external-path
+        name="temp"
+        path="Pictures" />
+
+    <external-path
+        name="external_storage_root"
+        path="." />
+
+    <external-path
+        name="download"
+        path="." />
+
+    <!--<root-path-->
+        <!--name="temp"-->
+        <!--path="Pictures" />-->
+
+    <!--<external-path-->
+        <!--name="external_files"-->
+        <!--path="." />-->
+    <!--<external-path-->
+        <!--name="images"-->
+        <!--path="Pictures/" />-->
+    <!--<external-path-->
+        <!--name="dcim"-->
+        <!--path="DCIM/" />-->
+</paths>

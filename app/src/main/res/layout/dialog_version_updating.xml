@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/update"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="发现新版本:"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/titleVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/title"
+                android:text="1.0.0"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/updatatext"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@+id/titleVersion"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/dialog_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/updatingContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="更新内容"
+                    android:textColor="#FCC725"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#40000000" />
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="#C1C0C9"
+                    android:textSize="12dp"
+                    tools:text="更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容更新内容" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp">
+
+            <LinearLayout
+                android:id="@+id/progressbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/progressText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:indeterminateDrawable="@drawable/version_progress_bg"
+                    android:max="100"
+                    android:minHeight="5dp"
+                    android:progress="0" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/updatingBtn"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/login_btn_text_shape"
+                android:gravity="center"
+                android:text="立即更新"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dismissBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:gravity="center"
+            android:text="暂不更新"
+            android:textColor="#73ffffff"
+            android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#30000000"
+            android:id="@+id/over_edit"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:background="#0B0B0B">
+            <io.github.luckyandyzhang.mentionedittext.MentionEditText
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:theme="@style/inputStyle"
+                android:background="@null"
+                android:id="@+id/edit"
+                android:textSize="14dp"
+                android:textColor="#d9ffffff"
+                android:textColorHint="#40ffffff"
+                android:gravity="top" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="48dp"
+                android:src="@mipmap/dynamic_button_input_at"
+                android:scaleType="centerInside"
+                android:id="@+id/iv_at"/>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/dynamic_button_input_sendout"
+                android:scaleType="centerInside"
+                android:id="@+id/iv_send"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="16dp"
+                android:text="0/140"
+                android:textColor="#40ffffff"
+                android:textSize="12dp"
+                android:id="@+id/tv_size"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

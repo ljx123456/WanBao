@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212123">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/topic_ic"
+                    android:id="@+id/iv_topic"/>
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="44dp"
+                    android:src="@mipmap/navbar_button_back"
+                    android:scaleType="centerInside"
+                    android:id="@+id/iv_back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginLeft="12dp"
+                    android:text=""
+                    android:textColor="#fffed449"
+                    android:textSize="20dp"
+                    android:id="@+id/tv_topic"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="12dp"
+                    android:text=""
+                    android:textColor="#d9ffffff"
+                    android:textSize="14dp"
+                    android:id="@+id/tv_topic_num"/>
+
+                <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="140dp"-->
+                    <!--android:paddingTop="12dp"-->
+                    <!--android:background="@drawable/vp_community_bg"-->
+                    <!--android:id="@+id/recy_topic_details"></android.support.v7.widget.RecyclerView>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="140dp"
+                    android:paddingTop="12dp"
+                    android:background="@drawable/vp_community_bg"
+                    android:id="@+id/fl_recy"></RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/layout_title"
+        android:background="#212123"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/navbar_button_back"
+            android:scaleType="centerInside"
+            android:id="@+id/iv_title_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_centerHorizontal="true"
+            android:text="#我太难了！！！#"
+            android:textColor="#fffed449"
+            android:textSize="16dp"
+            android:id="@+id/tv_title"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/btn_main_release_bg"
+        android:id="@+id/layout_topic">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/hotspotpage_botton_hotspot"
+            android:scaleType="centerInside"
+            android:id="@+id/iv_add_topic"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/tabbar_hotspot"></RelativeLayout>
+
+</RelativeLayout>

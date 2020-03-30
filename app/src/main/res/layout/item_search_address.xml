@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#212123">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            app:riv_oval="true"
+            android:src="@mipmap/signin_search_matching_place"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="48dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="夜魅KTV（玉林店）"
+                android:textColor="#ffffffff"
+                android:textSize="16dp"
+                android:maxLines="1"
+                android:maxEms="8"
+                android:ellipsize="end"
+                android:id="@+id/tv_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="武侯区科华中路9号王府井购物中心8层"
+                android:textColor="#a6ffffff"
+                android:textSize="12dp"
+                android:maxLines="1"
+                android:maxEms="15"
+                android:ellipsize="end"
+                android:id="@+id/tv_address"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="12dp"
+            android:text="10m"
+            android:textColor="#73ffffff"
+            android:textSize="12dp"
+            android:id="@+id/tv_distance"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

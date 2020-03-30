@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            app:riv_corner_radius="12dp"
+            android:scaleType="fitXY"
+            android:id="@+id/iv_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/tv_landmark_bg"
+            android:text="九眼桥"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:id="@+id/tv_name"/>
+    </RelativeLayout>
+
+</LinearLayout>

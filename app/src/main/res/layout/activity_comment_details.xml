@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#212123">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/layout_title">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+            android:src="@mipmap/navbar_button_back"
+            android:scaleType="centerInside"
+            android:id="@+id/iv_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="#d9ffffff"
+            android:textSize="16dp"
+            android:id="@+id/tv_title"/>
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true"
+                    android:id="@+id/iv_header"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_header"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="12dp"
+                    android:text=""
+                    android:textColor="#73ffffff"
+                    android:textSize="14dp"
+                    android:id="@+id/tv_name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:layout_alignBottom="@+id/tv_name"
+                    android:layout_marginLeft="4dp"
+                    android:text=""
+                    android:textColor="#73ffffff"
+                    android:textSize="11dp"
+                    android:id="@+id/tv_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#73ffffff"
+                    android:textSize="12dp"
+                    android:drawableRight="@mipmap/dynamic_button_comment_like_nor"
+                    android:drawablePadding="4dp"
+                    android:id="@+id/tv_like"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_header"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="28dp"
+                    android:text=""
+                    android:textColor="#d9ffffff"
+                    android:textSize="16dp"
+                    android:id="@+id/tv_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#40000000">
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:drawableRight="@mipmap/dynamic_button_sort_arrow_top_yellow"
+                    android:text="热度"
+                    android:textColor="#fffcc725"
+                    android:textSize="12dp"
+                    android:id="@+id/tv_sort"/>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recy_comment"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="#1A1A1C"
+        android:id="@+id/layout_bottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="告诉大家你的想法……"
+            android:textColor="#40ffffff"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/dynamic_button_input_at"
+            android:scaleType="centerInside"/>
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:id="@+id/layout_edit"-->
+        <!--android:visibility="invisible">-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#1a000000"-->
+            <!--android:id="@+id/over_edit"/>-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="112dp"-->
+            <!--android:background="#0B0B0B">-->
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="52dp"-->
+                <!--android:layout_marginLeft="12dp"-->
+                <!--android:layout_marginRight="12dp"-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:theme="@style/inputStyle"-->
+                <!--android:background="@null"-->
+                <!--android:id="@+id/edit"-->
+                <!--android:textSize="14dp"-->
+                <!--android:textColor="#d9ffffff"-->
+                <!--android:textColorHint="#40ffffff"-->
+                <!--android:gravity="top" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="48dp"-->
+                <!--android:layout_height="48dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_marginRight="48dp"-->
+                <!--android:src="@mipmap/dynamic_button_input_at"-->
+                <!--android:scaleType="centerInside"-->
+                <!--android:id="@+id/iv_at"/>-->
+            <!---->
+            <!--<ImageView-->
+                <!--android:layout_width="48dp"-->
+                <!--android:layout_height="48dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:src="@mipmap/dynamic_button_input_sendout"-->
+                <!--android:scaleType="centerInside"-->
+                <!--android:id="@+id/iv_send"/>-->
+
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

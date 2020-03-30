@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#30000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/dialog_report_details_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="举报详情"
+                android:textColor="#d9ffffff"
+                android:textSize="14dp"/>
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/shophomepage_button_report_close"
+                android:id="@+id/dialog_close"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/dialog_report_details_content_bg">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="4dp"
+                android:gravity="top"
+                android:theme="@style/inputStyle"
+                android:background="@null"
+                android:hint="请描述举报详情……"
+                android:textColorHint="#40ffffff"
+                android:textColor="#d9ffffff"
+                android:textSize="14dp"
+                android:maxLength="120"
+                android:id="@+id/dialog_edit"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"
+                android:text="0/120"
+                android:textColor="#40ffffff"
+                android:textSize="12dp"
+                android:id="@+id/dialog_num"/>
+        </RelativeLayout>
+        
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#fffcc725"
+            android:textSize="16dp"
+            android:id="@+id/dialog_submit"/>
+    </LinearLayout>
+</LinearLayout>

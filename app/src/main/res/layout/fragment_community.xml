@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#212123">
+    
+    <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/scroll">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="44dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--&gt;-->
+                <!--<TextView-->
+                    <!--android:layout_width="48dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginLeft="12dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:drawablePadding="2dp"-->
+                    <!--android:drawableLeft="@mipmap/homepage_icon_navbar_city"-->
+                    <!--android:text="成都"-->
+                    <!--android:textColor="#ffffffff"-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:id="@+id/tv_location"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_height="32dp"-->
+                    <!--android:layout_marginLeft="12dp"-->
+                    <!--android:layout_marginRight="12dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:background="@drawable/tv_location_bg"-->
+                    <!--android:text="搜索"-->
+                    <!--android:textColor="#3D000000"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:drawablePadding="4dp"-->
+                    <!--android:drawableLeft="@mipmap/homepage_icon_searchbar_search"-->
+                    <!--android:paddingLeft="12dp"-->
+                    <!--android:id="@+id/tv_community_search"/>-->
+            <!--</LinearLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_height="53dp">
+                <com.androidkun.xtablayout.XTabLayout
+                    android:id="@+id/communityTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="130dp"
+                    android:layout_centerVertical="true"
+                    android:layout_column="2"
+                    android:background="#212123"
+                    app:xTabIndicatorColor="#FE849B"
+                    app:xTabIndicatorHeight="0dp"
+                    app:xTabIndicatorWidth="0dp"
+                    app:xTabMode="fixed"
+                    app:xTabSelectedTextColor="#FCC725"
+                    app:xTabSelectedTextSize="20dp"
+
+                    app:xTabTextColor="#73ffffff"
+                    app:xTabTextSize="16dp"
+                    app:xTabTextSelectedBold="true"
+                    app:xTabTextBold="false"/>
+
+                <RelativeLayout
+                    android:layout_width="46dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/layout_search"
+                    android:visibility="gone">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/homepage_icon_searchbar_search"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/layout"-->
+                <!--android:background="@drawable/vp_community_bg">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:id="@+id/layout_content"-->
+                    <!--android:visibility="visible">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="44dp"-->
+                        <!--android:paddingLeft="12dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:id="@+id/layout_topic">-->
+                        <!--<android.support.v7.widget.RecyclerView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="44dp"-->
+                            <!--android:layout_marginRight="30dp"-->
+
+                            <!--android:id="@+id/recy_hot_topic"></android.support.v7.widget.RecyclerView>-->
+
+                        <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="41dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/layout_topic_down">&ndash;&gt;-->
+                        <!--<ImageView-->
+                            <!--android:layout_width="41dp"-->
+                            <!--android:layout_height="44dp"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:scaleType="centerInside"-->
+                            <!--android:src="@mipmap/homepage_button_topic_arrow_lower"-->
+                            <!--android:id="@+id/iv_topic_down"/>-->
+                        <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+                    <!--</RelativeLayout>-->
+
+                    <android.support.v4.view.ViewPager
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/vp_community">
+
+                    </android.support.v4.view.ViewPager>
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:id="@+id/scroll_topic"-->
+                    <!--android:visibility="gone">-->
+                    <!--<wanbao.yongchao.com.wanbao.view.tag.MyScrollView-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginTop="2dp"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1">-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:orientation="vertical">-->
+                            <!--<wanbao.yongchao.com.wanbao.view.tag.MultiLineChooseLayout-->
+                                <!--android:id="@+id/chooseTopic"-->
+                                <!--style="@style/SingleChooseTopic"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginBottom="100dp"-->
+                                <!--android:layout_marginLeft="16dp" />-->
+                            <!--&lt;!&ndash;<View&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="match_parent"/>&ndash;&gt;-->
+                        <!--</LinearLayout>-->
+                    <!--</wanbao.yongchao.com.wanbao.view.tag.MyScrollView>-->
+
+                    <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="41dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="44dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/layout_topic_top">&ndash;&gt;-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="41dp"-->
+                        <!--android:layout_height="44dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:scaleType="centerInside"-->
+                        <!--android:src="@mipmap/homepage_button_topic_arrow_top"-->
+                        <!--android:id="@+id/iv_topic_top"/>-->
+
+                    <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+                <!--</LinearLayout>-->
+
+            <!--</RelativeLayout>-->
+
+        </LinearLayout>
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+
+
+
+
+</LinearLayout>

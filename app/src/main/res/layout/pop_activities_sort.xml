@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#80000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/layout_activities_sort_bg">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="全部"
+            android:textColor="#fffcc725"
+            android:textSize="16dp"
+            android:id="@+id/tv_sort1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="美食"
+            android:textColor="#a6ffffff"
+            android:textSize="16dp"
+            android:id="@+id/tv_sort2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="旅游"
+            android:textColor="#a6ffffff"
+            android:textSize="16dp"
+            android:id="@+id/tv_sort3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="娱乐"
+            android:textColor="#a6ffffff"
+            android:textSize="16dp"
+            android:id="@+id/tv_sort4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="生活"
+            android:textColor="#a6ffffff"
+            android:textSize="16dp"
+            android:id="@+id/tv_sort5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="文化"
+            android:textColor="#a6ffffff"
+            android:textSize="16dp"
+            android:id="@+id/tv_sort6"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/over"></RelativeLayout>
+
+</LinearLayout>

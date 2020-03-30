@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="提示"
+            android:textColor="#d9ffffff"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#40000000"
+            android:id="@+id/view_title"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="#d9ffffff"
+            android:textSize="14dp"
+            tools:text="请联系管理员找回密码" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#40000000" />
+
+        <LinearLayout
+            android:id="@+id/yesOrNo"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/yes"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="否"
+                android:textColor="#FCC725"
+                android:textSize="14dp" />
+
+            <!--<View-->
+            <!--android:id="@+id/line"-->
+            <!--android:layout_width="1px"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#EBEBEB" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/dialog_middle"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="14sp"-->
+            <!--tools:text="转线下" />-->
+
+            <!--<View-->
+            <!--android:id="@+id/line_two"-->
+            <!--android:layout_width="1px"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#EBEBEB" />-->
+
+            <TextView
+                android:id="@+id/no"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="是"
+                android:textColor="#FCC725"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

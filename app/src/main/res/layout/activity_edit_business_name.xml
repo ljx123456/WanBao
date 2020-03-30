@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#212123">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/navbar_button_back"
+            android:id="@+id/iv_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="商家名称"
+            android:textColor="#d9ffffff"
+            android:textSize="16dp"
+            android:id="@+id/tv_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="保存"
+            android:textColor="#fffcc725"
+            android:textSize="14dp"
+            android:id="@+id/tv_keep"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="#2C2C2F"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="商家名称"
+            android:textColor="#a6ffffff"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32dp"
+            android:theme="@style/inputStyle"
+            android:background="@null"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:hint="在此输入商家名称"
+            android:maxLength="12"
+            android:textColorHint="#40ffffff"
+            android:textColor="#d9ffffff"
+            android:id="@+id/edit_user_name"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="昵称仅支持中英文与数字，且不超12个字"
+        android:textColor="#73ffffff"
+        android:textSize="13dp"/>
+
+</LinearLayout>

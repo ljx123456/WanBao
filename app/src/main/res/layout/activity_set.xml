@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212123"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/navbar_button_back"
+            android:id="@+id/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="设置中心"
+            android:textColor="#d9ffffff"
+            android:textSize="16dp"
+            />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"
+                    android:text="账号"
+                    android:textColor="#a6ffffff"
+                    android:textSize="13dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="vertical"
+                android:background="#2C2C2F">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="账号安全"
+                    android:textColor="#d9ffffff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:drawableRight="@mipmap/mine_icon_setting_right"
+                    android:textSize="14dp"
+                    android:id="@+id/tv_account"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="黑名单"
+                    android:textColor="#d9ffffff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:drawableRight="@mipmap/mine_icon_setting_right"
+                    android:textSize="14dp"
+                    android:id="@+id/tv_blacklist"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="26dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"
+                    android:text="通用"
+                    android:textColor="#a6ffffff"
+                    android:textSize="13dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="vertical"
+                android:background="#2C2C2F">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="通知设置"
+                    android:textColor="#d9ffffff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:drawableRight="@mipmap/mine_icon_setting_right"
+                    android:textSize="14dp"
+                    android:id="@+id/tv_notice"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:id="@+id/layout_cache">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="清理缓存"
+                        android:textColor="#d9ffffff"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="0 M"
+                        android:textColor="#d9ffffff"
+                        android:textSize="14dp"
+                        android:id="@+id/tv_cache_size"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="26dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"
+                    android:text="其他"
+                    android:textColor="#a6ffffff"
+                    android:textSize="13dp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:orientation="vertical"
+                android:background="#2C2C2F">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="关于晚豹"
+                    android:textColor="#d9ffffff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:drawableRight="@mipmap/mine_icon_setting_right"
+                    android:textSize="14dp"
+                    android:id="@+id/tv_about"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="用户协议"
+                    android:textColor="#d9ffffff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:drawableRight="@mipmap/mine_icon_setting_right"
+                    android:textSize="14dp"
+                    android:id="@+id/tv_agreement"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="隐私政策"
+                    android:textColor="#d9ffffff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:drawableRight="@mipmap/mine_icon_setting_right"
+                    android:textSize="14dp"
+                    android:id="@+id/tv_policy"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="帮助建议"
+                    android:textColor="#d9ffffff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:drawableRight="@mipmap/mine_icon_setting_right"
+                    android:textSize="14dp"
+                    android:id="@+id/tv_suggest"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="版本更新"
+                    android:textColor="#d9ffffff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:drawableRight="@mipmap/mine_icon_setting_right"
+                    android:textSize="14dp"
+                    android:id="@+id/tv_update"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="26dp"
+                android:background="#2C2C2F"
+                android:paddingLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="退出登录"
+                android:textColor="#d9ffffff"
+                android:textSize="14dp"
+                android:id="@+id/tv_out"/>
+
+
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

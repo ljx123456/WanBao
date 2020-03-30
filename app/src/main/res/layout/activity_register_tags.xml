@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212123"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/item_tag_bg">
+        <wanbao.yongchao.com.wanbao.view.tag.MultiLineChooseLayout
+            android:id="@+id/chooseTag"
+            style="@style/SingleChooseImprsession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="24dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"
+        android:text="全部标签"
+        android:textColor="#fffcc725"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_height="match_parent">
+        <wanbao.yongchao.com.wanbao.view.tag.MultiLineChooseLayout
+            android:id="@+id/Tags"
+            style="@style/SingleChooseTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="48dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            />
+    </ScrollView>
+
+</LinearLayout>

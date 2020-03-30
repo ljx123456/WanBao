@@ -1,0 +1,273 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowDisablePreview">true</item>-->
+    </style>
+
+    <style name="VideoTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+
+    <style name="inputStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--&lt;!&ndash; 底部线 默认颜色 &ndash;&gt;-->
+        <!--<item name="android:colorControlNormal">#40000000</item>-->
+        <!--&lt;!&ndash; 底部线 EditText激活时颜色 &ndash;&gt;-->
+        <!--<item name="android:colorControlActivated">#40000000</item>-->
+        <!--<item name="android:colorAccent">#40000000</item>-->
+        <!-- 设置光标 -->
+        <item name="android:textCursorDrawable">@drawable/edit_cursor</item>
+    </style>
+
+    <style name="inputCodeStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 底部线 默认颜色 -->
+        <item name="android:colorControlNormal">#40000000</item>
+        <!-- 底部线 EditText激活时颜色 -->
+        <item name="android:colorControlActivated">#FCC725</item>
+        <item name="android:colorAccent">#FCC725</item>
+        <!-- 设置光标 -->
+        <item name="android:textCursorDrawable">@drawable/edit_cursor</item>
+    </style>
+
+    <style name="inputNameStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 底部线 默认颜色 -->
+        <item name="android:colorControlNormal">#40000000</item>
+        <!-- 底部线 EditText激活时颜色 -->
+        <item name="android:colorControlActivated">#40000000</item>
+        <item name="android:colorAccent">#40000000</item>
+        <!-- 设置光标 -->
+        <item name="android:textCursorDrawable">@drawable/edit_cursor</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="SingleChooseTag">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="item_textColor">#FCC725</item>//选项item文字默认值
+        <item name="item_backgroundColor">#212123</item>//选项item背景色
+        <!--<item name="item_selectedTextColor">#535252</item>选中后选项item的文字颜色-->
+        <!--<item name="item_selectedBackgroundColor">#ffffff</item>选中后选项item的背景颜色-->
+        <item name="item_radius">16dp</item>
+        <item name="item_strokeColor">#FCC725</item>选项item的边缘颜色
+        <!--<item name="item_selectedStrokeColor">#535252</item>选项item选中后边缘颜色-->
+        <item name="item_strokeWidth">1dp</item>选项item边缘的大小
+        <item name="item_horizontalSpacing">12dp</item>
+        <item name="item_verticalSpacing">12dp</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="item_horizontalPadding">8dp</item>
+        <item name="item_verticalPadding">8dp</item>
+        <!--单位dp-->
+        <item name="item_width">wrap_content</item>
+        <item name="item_height">wrap_content</item>
+        <!--限制tag显示长度,规则查看Textview-->
+        <item name="item_maxEms">5</item>
+        <!--单选-->
+        <item name="item_multiChooseable">false</item>
+        <item name="item_click">false</item>
+    </style>
+
+    <style name="SingleChooseImprsession">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="item_textColor">#ffffff</item>//选项item文字默认值
+        <item name="item_backgroundColor">#FCC725</item>//选项item背景色
+        <!--<item name="item_selectedTextColor">#535252</item>选中后选项item的文字颜色-->
+        <!--<item name="item_selectedBackgroundColor">#ffffff</item>选中后选项item的背景颜色-->
+        <item name="item_radius">16dp</item>
+        <!--<item name="item_strokeColor">#FCC725</item>选项item的边缘颜色-->
+        <!--<item name="item_selectedStrokeColor">#535252</item>选项item选中后边缘颜色-->
+        <!--<item name="item_strokeWidth">1dp</item>选项item边缘的大小-->
+        <item name="item_horizontalSpacing">12dp</item>
+        <item name="item_verticalSpacing">12dp</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="item_horizontalPadding">8dp</item>
+        <item name="item_verticalPadding">8dp</item>
+        <!--单位dp-->
+        <item name="item_width">wrap_content</item>
+        <item name="item_height">wrap_content</item>
+        <!--限制tag显示长度,规则查看Textview-->
+        <item name="item_maxEms">5</item>
+        <!--单选-->
+        <item name="item_multiChooseable">false</item>
+        <item name="item_click">true</item>
+    </style>
+
+    <style name="SingleChooseTags">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="item_textColor">#FCC725</item>//选项item文字默认值
+        <item name="item_backgroundColor">#212123</item>//选项item背景色
+        <item name="item_selectedTextColor">#ffffff</item>选中后选项item的文字颜色
+        <item name="item_selectedBackgroundColor">#FCC725</item>选中后选项item的背景颜色
+        <item name="item_radius">16dp</item>
+        <item name="item_strokeColor">#FCC725</item>选项item的边缘颜色
+        <!--<item name="item_selectedStrokeColor">#535252</item>选项item选中后边缘颜色-->
+        <item name="item_strokeWidth">1dp</item>选项item边缘的大小
+        <item name="item_horizontalSpacing">12dp</item>
+        <item name="item_verticalSpacing">12dp</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="item_horizontalPadding">10dp</item>
+        <item name="item_verticalPadding">8dp</item>
+        <!--单位dp-->
+        <item name="item_width">wrap_content</item>
+        <item name="item_height">wrap_content</item>
+        <!--限制tag显示长度,规则查看Textview-->
+        <item name="item_maxEms">5</item>
+        <!--单选-->
+        <item name="item_multiChooseable">true</item>
+        <item name="item_click">true</item>
+    </style>
+
+    <style name="SingleChooseTopic">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="item_textColor">#FCC725</item>//选项item文字默认值
+        <item name="item_backgroundColor">#212123</item>//选项item背景色
+        <item name="item_selectedTextColor">#000000</item>选中后选项item的文字颜色
+        <item name="item_selectedBackgroundColor">#FCC725</item>选中后选项item的背景颜色
+        <item name="item_radius">10dp</item>
+        <!--<item name="item_strokeColor">#FCC725</item>选项item的边缘颜色-->
+        <!--<item name="item_selectedStrokeColor">#535252</item>选项item选中后边缘颜色-->
+        <!--<item name="item_strokeWidth">1dp</item>选项item边缘的大小-->
+        <item name="item_horizontalSpacing">8dp</item>
+        <item name="item_verticalSpacing">27dp</item>
+        <item name="item_textSize">14sp</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="item_horizontalPadding">8dp</item>
+        <item name="item_verticalPadding">1dp</item>
+        <!--单位dp-->
+        <item name="item_width">wrap_content</item>
+        <item name="item_height">20</item>
+        <!--限制tag显示长度,规则查看Textview-->
+        <item name="item_maxEms">5</item>
+        <!--单选-->
+        <item name="item_multiChooseable">false</item>
+        <item name="item_click">true</item>
+    </style>
+
+    <style name="HomePageTags">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="item_textColor">#FCC725</item>//选项item文字默认值
+        <item name="item_backgroundColor">#212123</item>//选项item背景色
+        <item name="item_selectedTextColor">#FCC725</item>选中后选项item的文字颜色
+        <item name="item_selectedBackgroundColor">#212123</item>选中后选项item的背景颜色
+        <item name="item_radius">12dp</item>
+        <item name="item_strokeColor">#FCC725</item>选项item的边缘颜色
+        <!--<item name="item_selectedStrokeColor">#535252</item>选项item选中后边缘颜色-->
+        <item name="item_strokeWidth">1dp</item>选项item边缘的大小
+        <item name="item_horizontalSpacing">16dp</item>
+        <item name="item_verticalSpacing">12dp</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="item_horizontalPadding">10dp</item>
+        <item name="item_verticalPadding">4dp</item>
+        <!--单位dp-->
+        <item name="item_width">wrap_content</item>
+        <item name="item_height">24</item>
+        <!--限制tag显示长度,规则查看Textview-->
+        <item name="item_maxEms">5</item>
+        <!--单选-->
+        <item name="item_multiChooseable">false</item>
+        <item name="item_click">true</item>
+    </style>
+
+    <style name="historyMulti">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!--<item name="android:layout_marginTop">8dp</item>-->
+        <item name="item_textColor">#999999</item>//选项item文字默认值
+        <item name="item_backgroundColor">#2C2C2F</item>//选项item背景色
+        <!--<item name="item_selectedTextColor">#000000</item>选中后选项item的文字颜色-->
+        <!--<item name="item_selectedBackgroundColor">#FCC725</item>选中后选项item的背景颜色-->
+        <item name="item_radius">16dp</item>
+        <!--<item name="item_strokeColor">#FCC725</item>选项item的边缘颜色-->
+        <!--<item name="item_selectedStrokeColor">#535252</item>选项item选中后边缘颜色-->
+        <!--<item name="item_strokeWidth">1dp</item>选项item边缘的大小-->
+        <item name="item_horizontalSpacing">12dp</item>
+        <item name="item_verticalSpacing">12dp</item>
+        <item name="item_textSize">13sp</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="item_horizontalPadding">12dp</item>
+        <item name="item_verticalPadding">8.5dp</item>
+        <!--单位dp-->
+        <item name="item_width">wrap_content</item>
+        <item name="item_height">32</item>
+        <!--限制tag显示长度,规则查看Textview-->
+        <item name="item_maxEms">5</item>
+        <!--单选-->
+        <item name="item_multiChooseable">false</item>
+        <item name="item_click">true</item>
+    </style>
+
+    <style name="EditUserTags">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!--<item name="android:layout_marginTop">8dp</item>-->
+        <item name="item_textColor">#000000</item>//选项item文字默认值
+        <item name="item_backgroundColor">#FFD23D</item>//选项item背景色
+        <!--<item name="item_selectedTextColor">#000000</item>选中后选项item的文字颜色-->
+        <!--<item name="item_selectedBackgroundColor">#FCC725</item>选中后选项item的背景颜色-->
+        <item name="item_radius">12dp</item>
+        <!--<item name="item_strokeColor">#FCC725</item>选项item的边缘颜色-->
+        <!--<item name="item_selectedStrokeColor">#535252</item>选项item选中后边缘颜色-->
+        <!--<item name="item_strokeWidth">1dp</item>选项item边缘的大小-->
+        <item name="item_horizontalSpacing">16dp</item>
+        <item name="item_verticalSpacing">12dp</item>
+        <item name="item_textSize">13sp</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="item_horizontalPadding">11dp</item>
+        <item name="item_verticalPadding">4.5dp</item>
+        <!--单位dp-->
+        <item name="item_width">wrap_content</item>
+        <item name="item_height">24</item>
+        <!--限制tag显示长度,规则查看Textview-->
+        <item name="item_maxEms">5</item>
+        <!--单选-->
+        <item name="item_multiChooseable">false</item>
+        <item name="item_click">false</item>
+    </style>
+
+    <style name="AnimationUpPopup">
+        <item name="android:windowEnterAnimation">@anim/grow_fade_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_fade_out_from_bottom</item>
+    </style>
+
+    <style name="AnimationFromButtom">
+        <item name="android:windowEnterAnimation">@anim/popup_form_bottom</item>
+        <item name="android:windowExitAnimation">@anim/drop_down_to_bottom</item>
+    </style>
+
+    <style name="AnimationFromTop">
+        <item name="android:windowEnterAnimation">@anim/drop_down_from_top</item>
+        <item name="android:windowExitAnimation">@anim/hide_to_top</item>
+    </style>
+
+</resources>

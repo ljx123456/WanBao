@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/dialogOver"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layout_business_type_bg"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请选择呼叫号码："
+                android:textColor="#d9ffffff"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/shareOff"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/actionsheets_button_close"
+                android:scaleType="centerInside"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+
+            android:textColor="#fffcc725"
+            android:textSize="16dp"
+            android:id="@+id/tv_phone1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+
+            android:textColor="#fffcc725"
+            android:textSize="16dp"
+            android:id="@+id/tv_phone2"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

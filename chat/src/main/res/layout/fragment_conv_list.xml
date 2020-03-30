@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/conv_fragment_view"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#212123"
+              android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/title_bar_height"-->
+        <!--android:background="@color/jmui_jpush_blue">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/main_title_bar_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="14dp"-->
+            <!--android:text="JChat"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="18sp"/>-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/create_group_btn"-->
+            <!--android:layout_width="55dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/msg_title_bar_right_btn_bg"-->
+            <!--android:src="@drawable/msg_titlebar_right_btn"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/null_conversation"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/blankpage_no_message"
+                android:id="@+id/iv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_below="@+id/iv"
+                android:layout_centerHorizontal="true"
+                android:text="暂无聊天信息"
+                android:textColor="#a6ffffff"
+                android:textSize="16dp"
+                android:id="@+id/noNetworkView"/>
+
+            <TextView
+                android:id="@+id/workTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noNetworkView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="快去认识一些新朋友。和他们聊一聊吧~"
+                android:textColor="#73ffffff"
+                android:textSize="13dp"/>
+            <!--<TextView-->
+            <!---->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="暂无会话"-->
+            <!--android:textColor="#999999"-->
+            <!--android:textSize="16sp"-->
+            <!--android:visibility="visible"/>-->
+        </RelativeLayout>
+
+        <!--<TextView-->
+            <!--android:id="@+id/null_conversation"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="暂无会话"-->
+            <!--android:textColor="#999999"-->
+            <!--android:textSize="16sp"-->
+            <!--android:visibility="gone"/>-->
+
+        <ListView
+            android:id="@+id/conv_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#212123"
+            android:layout_marginTop="1dp"
+            android:divider="@null"
+            android:dividerHeight="0.3dp"
+            android:headerDividersEnabled="false" />
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="#212123">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="16dp"
+        android:text="ada"
+        android:textColor="#fffcc725"
+        android:textSize="16dp"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_choose_at"/>
+</LinearLayout>

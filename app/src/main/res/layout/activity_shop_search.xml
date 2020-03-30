@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#212123">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edit_search_bg"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:theme="@style/inputStyle"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/actionsheets_button_search"
+            android:paddingLeft="8dp"
+            android:drawablePadding="6dp"
+            android:textColor="#ffffffff"
+            android:textSize="14dp"
+            android:hint="搜索"
+            android:textColorHint="#73ffffff"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:id="@+id/edit_search"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#40000000"/>
+
+        <TextView
+            android:layout_width="52dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#a6ffffff"
+            android:textSize="14dp"
+            android:id="@+id/tv_cancel"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="14dp"
+        android:id="@+id/layout_history"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="历史搜索"
+                android:textColor="#d9ffffff"
+                android:textSize="16dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/searchpage_delete"
+                android:id="@+id/iv_delete"/>
+        </RelativeLayout>
+
+
+        <wanbao.yongchao.com.wanbao.view.MaxHeightView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mhv_HeightDimen="76dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="28dp">
+            <wanbao.yongchao.com.wanbao.view.tag.MultiLineChooseLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/historyMulti"
+                android:id="@+id/history"></wanbao.yongchao.com.wanbao.view.tag.MultiLineChooseLayout>
+        </wanbao.yongchao.com.wanbao.view.MaxHeightView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:id="@+id/layout_hot_search"
+        android:visibility="visible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:gravity="center_vertical"
+            android:text="热门好店"
+            android:textColor="#d9ffffff"
+            android:textSize="16dp"
+            android:layout_marginLeft="12dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recy_hot_shop"></android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recy_shop"
+        android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

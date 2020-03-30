@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/dialogOver"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_camera_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:text="请输入详细活动地址："
+                android:textColor="#d9ffffff"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#73fcc725"
+                android:textSize="14dp"
+                android:enabled="false"
+                android:id="@+id/tv_sure"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/tv_sure"
+                android:layout_marginRight="24dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#a6ffffff"
+                android:textSize="14dp"
+                android:id="@+id/tv_cancel"/>
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:layout_marginBottom="16dp"
+            android:theme="@style/inputStyle"
+            android:gravity="center_horizontal"
+            android:background="@null"
+            android:hint="请输入详细活动地址"
+            android:textColorHint="#40ffffff"
+            android:textColor="#d9ffffff"
+            android:textSize="16dp"
+            android:id="@+id/edit_address"/>
+
+    </LinearLayout>
+
+</LinearLayout>

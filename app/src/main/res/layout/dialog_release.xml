@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/release_bg"
+    android:id="@+id/content">
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@mipmap/dialog_release_bar"/>-->
+    
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="26dp"
+        android:src="@mipmap/tabbar_button_close"
+        android:id="@+id/close"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="88dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/homepage_button_release_pic"
+            android:drawablePadding="6dp"
+            android:gravity="center_horizontal"
+            android:text="照片"
+            android:textColor="#a6ffffff"
+            android:textSize="12dp"
+            android:id="@+id/tv_release_pic"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/homepage_button_release_video"
+            android:drawablePadding="6dp"
+            android:gravity="center_horizontal"
+            android:text="视频"
+            android:textColor="#a6ffffff"
+            android:textSize="12dp"
+            android:id="@+id/tv_release_video"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/homepage_buttons_release_location"
+            android:drawablePadding="6dp"
+            android:gravity="center_horizontal"
+            android:text="打卡"
+            android:textColor="#a6ffffff"
+            android:textSize="12dp"
+            android:id="@+id/tv_release_location"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/homepage_button_release_text"
+            android:drawablePadding="6dp"
+            android:gravity="center_horizontal"
+            android:text="文字"
+            android:textColor="#a6ffffff"
+            android:textSize="12dp"
+            android:id="@+id/tv_release_text"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableTop="@mipmap/homepage_buttons_release_article"-->
+            <!--android:drawablePadding="6dp"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="夜计划"-->
+            <!--android:textColor="#a6ffffff"-->
+            <!--android:textSize="12dp"-->
+            <!--android:id="@+id/tv_release_ye"/>-->
+    </LinearLayout>
+
+
+</RelativeLayout>

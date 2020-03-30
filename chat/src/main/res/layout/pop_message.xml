@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#66000000"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/pop_message_bg"></RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="常用语:"
+                android:textColor="#2DD0CF"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="1.您好，请问您的订单位置准确吗？"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/pop_tv1"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="2.我马上出发，请您稍等，我会在规定时间内到达。"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/pop_tv2"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="3.我正在前往订单指定地点途中，请您稍等，我会在规定时间内到达。"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/pop_tv3"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="4.抱歉，路上拥堵，稍等一会儿就到。"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/pop_tv4"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="5.我已到达指定地点，请问您在这里吗？"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/pop_tv5"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="6.感谢您的支持，期待下次与您相见。"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/pop_tv6"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

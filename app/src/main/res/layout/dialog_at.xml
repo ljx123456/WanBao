@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/dialogOver"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/dialog_at_bg">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:text="选择@好友："
+                    android:textColor="#d9ffffff"
+                    android:textSize="14dp"
+                    />
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/actionsheets_button_close"
+                    android:id="@+id/iv_close"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/layout_vp"
+                android:visibility="visible">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:text="最近"
+                        android:textColor="#fffcc725"
+                        android:textSize="20dp"
+                        android:id="@+id/tv_nearby"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_nearby"
+                        android:layout_marginLeft="20dp"
+                        android:text="关注"
+                        android:textColor="#a6ffffff"
+                        android:textSize="16dp"
+                        android:id="@+id/tv_like"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_like"
+                        android:layout_marginLeft="20dp"
+                        android:text="粉丝"
+                        android:textColor="#a6ffffff"
+                        android:textSize="16dp"
+                        android:id="@+id/tv_fans"/>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/actionsheets_button_search"
+                        android:id="@+id/iv_search"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/layout_at"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:id="@+id/recy_at"></android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <wanbao.yongchao.com.wanbao.view.MyViewPager
+                    android:id="@+id/vp_at"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></wanbao.yongchao.com.wanbao.view.MyViewPager>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FCC725"
+                    android:text="确定"
+                    android:textColor="#ff212123"
+                    android:textSize="16dp"
+                    android:id="@+id/btn_at"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/layout_search"
+                android:visibility="gone">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="52dp"
+                        android:layout_centerVertical="true"
+                        android:theme="@style/inputStyle"
+                        android:background="@drawable/edit_at_search_bg"
+                        android:gravity="center_vertical"
+                        android:drawableLeft="@mipmap/actionsheets_button_search"
+                        android:paddingLeft="8dp"
+                        android:drawablePadding="6dp"
+                        android:textColor="#ffffffff"
+                        android:textSize="14dp"
+                        android:imeOptions="actionSearch"
+                        android:singleLine="true"
+                        android:id="@+id/edit_search"/>
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:gravity="center"
+                        android:text="取消"
+                        android:textColor="#73ffffff"
+                        android:textSize="14dp"
+                        android:id="@+id/tv_cancel"/>
+                </RelativeLayout>
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scroll"
+                    android:visibility="gone">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recy_search"></android.support.v7.widget.RecyclerView>
+                        <include layout="@layout/layout_at_search_item"/>
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recy_user"></android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

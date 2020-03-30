@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/signin_data_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/signin_button_back"
+        android:scaleType="centerInside"
+        android:id="@+id/register_user_back"/>
+
+    <!--<ImageView-->
+        <!--android:layout_width="24dp"-->
+        <!--android:layout_height="24dp"-->
+        <!--android:src="@mipmap/signin_button_close"-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/register_user_close"/>-->
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="56dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        app:riv_oval="true"
+        android:src="@mipmap/headportrait_user"
+        android:id="@+id/registerUserHead"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/registerUserHead"
+        android:layout_marginTop="20dp"
+        android:theme="@style/inputStyle"
+        android:background="@null"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:hint="在此输入您的昵称"
+        android:maxLength="12"
+        android:textColorHint="#40ffffff"
+        android:textColor="#d9ffffff"
+        android:id="@+id/edit_user_name"/>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/edit_user_name"
+        android:layout_centerHorizontal="true"
+        android:background="#40000000"
+        android:layout_marginTop="2dp"
+        android:id="@+id/v1"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/v1"
+        android:layout_marginTop="16dp"
+        android:theme="@style/inputStyle"
+        android:background="@null"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:hint="轻触设置您的生日"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="text"
+        android:textColorHint="#40ffffff"
+        android:textColor="#d9ffffff"
+        android:id="@+id/edit_user_age"/>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/edit_user_age"
+        android:layout_centerHorizontal="true"
+        android:background="#40000000"
+        android:layout_marginTop="2dp"
+        android:id="@+id/v2"/>
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/v2"
+        android:layout_marginTop="16dp"
+        android:id="@+id/layout_sex">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="男"
+            android:textColor="#40ffffff"
+            android:textSize="14dp"
+            android:id="@+id/tv_sex_male"
+            android:background="@drawable/tv_sex_default_bg"/>
+        <View
+            android:layout_width="24dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="女"
+            android:textColor="#40ffffff"
+            android:textSize="14dp"
+            android:id="@+id/tv_sex_female"
+            android:background="@drawable/tv_sex_default_bg"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_sex"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:id="@+id/layout_none_tag">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加我的标签"
+            android:textColor="#73ffffff"
+            android:textSize="14dp"
+            android:drawableRight="@mipmap/signin_identity_user_right"
+            android:drawablePadding="6dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加标签可以让大家更了解你哦~"
+            android:textColor="#73ffffff"
+            android:layout_marginTop="6dp"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_below="@id/layout_sex"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:id="@+id/layout_tag"
+        android:visibility="gone">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#40000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:text="我的标签"
+            android:textColor="#d9ffffff"
+            android:textSize="14dp"
+            android:drawableRight="@mipmap/signin_identity_user_right"
+            android:id="@+id/tv_register_tag"/>
+
+        <wanbao.yongchao.com.wanbao.view.tag.MultiLineChooseLayout
+            android:id="@+id/userTagsLab"
+            style="@style/SingleChooseTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp" />
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btn_get_code_select"
+        android:enabled="false"
+        android:text="完成"
+        android:textColor="#40ffffff"
+        android:textSize="16dp"
+        android:id="@+id/btn_register_user"/>
+
+
+
+
+</RelativeLayout>

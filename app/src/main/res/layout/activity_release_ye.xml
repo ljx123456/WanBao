@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#212123">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+            android:src="@mipmap/navbar_button_back"
+            android:scaleType="centerInside"
+            android:id="@+id/iv_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:text="发布"
+            android:layout_alignParentRight="true"
+            android:textColor="#fffcc725"
+            android:textSize="14dp"
+            android:id="@+id/tv_release"/>
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:id="@+id/scroll">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/layout_top_shadow_bg"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="24dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="234dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:riv_corner_radius="4dp"
+                        android:scaleType="fitXY"
+                        android:id="@+id/iv_cover"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:background="@drawable/tv_release_cover_bg"
+                        android:text="更换封面"
+                        android:textColor="#d9ffffff"
+                        android:textSize="13dp"
+                        android:id="@+id/tv_cover"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="113dp"
+                    android:layout_height="113dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/button_pic_add"
+                    android:id="@+id/iv_add"/>
+
+                <wanbao.yongchao.com.wanbao.view.gridview.NonScrollGridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="16dp"
+
+                    android:verticalSpacing="4dp"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:horizontalSpacing="4dp"
+                    android:id="@+id/gv_picture"
+                    android:visibility="gone"></wanbao.yongchao.com.wanbao.view.gridview.NonScrollGridView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="32dp"
+                    android:theme="@style/inputStyle"
+                    android:background="@null"
+                    android:hint="标题"
+                    android:textColorHint="#73ffffff"
+                    android:textColor="#d9ffffff"
+                    android:textSize="20dp"
+                    android:maxLength="32"
+                    android:id="@+id/edit_title"/>
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="11.5dp"
+                    android:background="#40000000"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="12dp"
+                    android:theme="@style/inputStyle"
+                    android:background="@null"
+                    android:hint="活动详情"
+                    android:textColorHint="#73ffffff"
+                    android:textColor="#a6ffffff"
+                    android:textSize="14dp"
+                    android:id="@+id/edit_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="64dp"
+                    android:id="@+id/layout_bottom"
+                    android:visibility="gone"
+                    android:background="#2C2C2F">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layout_address"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="12dp"
+                            android:text="活动地址："
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"
+                            android:id="@+id/tv_address_title"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:layout_toRightOf="@+id/tv_address_title"
+                            android:layout_alignBottom="@+id/tv_address_title"
+                            android:text="四川省 成都市 武侯区"
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"
+                            android:id="@+id/tv_address_area"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:layout_below="@+id/tv_address_area"
+                            android:layout_alignLeft="@+id/tv_address_area"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="16dp"
+                            android:maxLines="1"
+                            android:hint="请输入详细活动地址"
+                            android:textColorHint="#40ffffff"
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"
+                            android:id="@+id/tv_address_content"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/layout_time"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="活动时间："
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:text="2019/10/25/00:00 - 2019/10/28/00:00"
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"
+                            android:id="@+id/tv_time"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp"
+
+                        android:id="@+id/layout_phone"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="联系电话："
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:text="18582558888 / 18582556666"
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"
+                            android:id="@+id/tv_phone"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#212123"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/layout_bottom_shadow_bg"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="预览"
+                android:textColor="#d9ffffff"
+                android:textSize="14sp"
+                android:id="@+id/tv_preview"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@mipmap/release_toolbar_button_activeaddress"
+                android:id="@+id/iv_address"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@mipmap/release_toolbar_button_time"
+                android:id="@+id/iv_time"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@mipmap/release_toolbar_button_phone"
+                android:id="@+id/iv_phone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

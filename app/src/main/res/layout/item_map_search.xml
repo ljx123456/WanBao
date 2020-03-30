@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2C2C2F">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:riv_oval="true"
+            android:src="@mipmap/signin_search_matching_place"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="48dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:id="@+id/layout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="夜魅KTV（玉林店）"
+                android:textColor="#d6ffffff"
+                android:textSize="16dp"
+                android:id="@+id/tv_search_title"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="武侯区科华中路9号王府井购物中心8层"
+                android:textColor="#a3ffffff"
+                android:textSize="12dp"
+                android:id="@+id/tv_search_add"/>
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:text="328m"-->
+            <!--android:textColor="#70ffffff"-->
+            <!--android:textSize="12dp"-->
+            <!--android:id="@+id/tv_search_distance"/>-->
+    </RelativeLayout>
+
+</LinearLayout>

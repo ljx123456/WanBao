@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/dialogOver"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_business_type_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center_vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:scaleType="centerCrop"
+                app:riv_oval="true"
+                android:id="@+id/iv_header"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#d9ffffff"
+                android:layout_toRightOf="@+id/iv_header"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:id="@+id/tv_name"/>
+
+            <ImageView
+                android:id="@+id/shareOff"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/actionsheets_button_close"
+                android:scaleType="centerInside"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="回复"
+            android:textColor="#fffcc725"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:id="@+id/tv_1"/>
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#40000000"
+            android:id="@+id/v1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="复制评论"
+            android:textColor="#fffcc725"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:id="@+id/tv_2"/>
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#40000000"
+            android:id="@+id/v2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="打招呼"
+            android:textColor="#fffcc725"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:id="@+id/tv_3"/>
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#40000000"
+            android:id="@+id/v3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="举报"
+            android:textColor="#fffcc725"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:id="@+id/tv_4"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/main">
+    tools:context=".ui.main.activity.MainActivity">
+    <wanbao.yongchao.com.wanbao.view.MyViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_main"></wanbao.yongchao.com.wanbao.view.MyViewPager>
+
+
+    <RelativeLayout
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/btn_main_release_bg"
+        android:id="@+id/layout_release">
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/tabbar_button_add"
+            android:scaleType="centerInside"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bottom_bar_bg"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_community">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:id="@+id/iv_community"
+                android:src="@mipmap/tabbar_button_homepage"
+                android:visibility="visible"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="首页"
+                android:textColor="#70ffffff"
+                android:textSize="12dp"
+                android:id="@+id/tv_community"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_explore">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:id="@+id/iv_explore"
+                android:visibility="gone"
+                android:src="@mipmap/tabbar_button_explore"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="社区"
+                android:textColor="#70ffffff"
+                android:textSize="12dp"
+                android:id="@+id/tv_explore"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_news">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:id="@+id/iv_news"
+                android:visibility="gone"
+                android:src="@mipmap/tabbar_button_message"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="消息"
+                android:textColor="#70ffffff"
+                android:textSize="12dp"
+                android:id="@+id/tv_news"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_mine">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:id="@+id/iv_mine"
+                android:visibility="gone"/>
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                app:riv_oval="true"
+                android:id="@+id/iv_mine_header"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="我的"
+                android:textColor="#70ffffff"
+                android:textSize="12dp"
+                android:id="@+id/tv_mine"
+                android:visibility="visible"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

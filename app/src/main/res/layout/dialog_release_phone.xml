@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/dialogOver"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/dialog_camera_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:text="请添加联系电话："
+                android:textColor="#d9ffffff"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#fffcc725"
+                android:textSize="14dp"
+                android:id="@+id/tv_sure"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/tv_sure"
+                android:layout_marginRight="24dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#a6ffffff"
+                android:textSize="14dp"
+                android:id="@+id/tv_cancel"/>
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:theme="@style/inputStyle"
+            android:gravity="center_horizontal"
+            android:background="@null"
+            android:hint="请输入联系电话"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:textColorHint="#40ffffff"
+            android:textColor="#d9ffffff"
+            android:textSize="16dp"
+            android:id="@+id/edit_phone1"/>
+        
+        <View
+            android:layout_width="24dp"
+            android:layout_height="0.5dp"
+            android:background="#40000000"
+            android:layout_marginTop="15.5dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@mipmap/phone_add"
+            android:scaleType="centerInside"
+            android:id="@+id/iv_add"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:layout_marginBottom="16dp"
+            android:theme="@style/inputStyle"
+            android:gravity="center_horizontal"
+            android:inputType="phone"
+            android:background="@null"
+            android:hint="请输入联系电话"
+            android:maxLines="1"
+            android:textColorHint="#40ffffff"
+            android:textColor="#d9ffffff"
+            android:textSize="16dp"
+            android:id="@+id/edit_phone2"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

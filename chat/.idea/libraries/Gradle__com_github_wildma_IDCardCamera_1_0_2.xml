@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.wildma:IDCardCamera-1.0.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/IDCardCamera-1.0.2.aar/704947f7dcc932adaecedf2e6ee661d2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/IDCardCamera-1.0.2.aar/704947f7dcc932adaecedf2e6ee661d2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.wildma/IDCardCamera/1.0.2/3ee8ccf9fbc886043112f84d919a815fbcfa5b42/IDCardCamera-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

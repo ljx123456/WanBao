@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="22dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dialog_release_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="插入一个话题："
+                android:textColor="#d9ffffff"
+                android:textSize="14dp"/>
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/actionsheets_button_close"
+                android:id="@+id/iv_close"/>
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:background="@drawable/edit_search_bg"
+            android:theme="@style/inputStyle"
+            android:drawableLeft="@mipmap/signin_searchbox_icon_search"
+            android:drawablePadding="4dp"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:hint="搜索话题"
+            android:textColorHint="#40ffffff"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:id="@+id/edit_search"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/layout_hot"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="热门话题"
+                android:textColor="#fffcc725"
+                android:textSize="12dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:id="@+id/recy_hot_search"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:id="@+id/recy_search"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>

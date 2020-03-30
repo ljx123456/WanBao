@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/tanchuang">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="关注商家"
+        android:textColor="#d9ffffff"
+        android:textSize="14dp"
+        android:id="@+id/tv_follow"/>
+
+    <View
+        android:layout_width="16dp"
+        android:layout_height="0.5dp"
+        android:background="#40000000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="收藏"
+        android:textColor="#d9ffffff"
+        android:textSize="14dp"
+        android:id="@+id/tv_collect"/>
+
+    <View
+        android:layout_width="16dp"
+        android:layout_height="0.5dp"
+        android:background="#40000000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="举报"
+        android:textColor="#d9ffffff"
+        android:textSize="14dp"
+        android:id="@+id/tv_report"/>
+
+    <!--<View-->
+        <!--android:layout_width="16dp"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="#40000000"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="32dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="不感兴趣"-->
+        <!--android:textColor="#d9ffffff"-->
+        <!--android:textSize="14dp"-->
+        <!--android:id="@+id/tv_uninterested"/>-->
+
+</LinearLayout>

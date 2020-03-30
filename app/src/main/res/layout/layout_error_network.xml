@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/errorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212123"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/noNetworkView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/blankpage_no_wifi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp" />
+
+    <TextView
+        android:id="@+id/workTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noNetworkView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="网络连接异常，请检查网络情况"
+        android:textColor="#a6ffffff"
+        android:textSize="16dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workTextView"
+        android:layout_centerHorizontal="true"
+        android:text="轻触屏幕重新加载"
+        android:textColor="#73000000"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/anewClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+
+        android:gravity="center"
+        android:text="点击重试"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+</RelativeLayout>

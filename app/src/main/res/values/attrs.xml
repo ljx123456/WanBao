@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义验证码输入框-->
+    <declare-styleable name="vericationCodeView">
+        <!--输入框的数量-->
+        <attr name="vcv_et_number" format="integer" />
+        <!--输入类型-->
+        <attr name="vcv_et_inputType">
+            <enum name="number" value="0" />
+            <enum name="numberPassword" value="1" />
+            <enum name="text" value="2" />
+            <enum name="textPassword" value="3" />
+        </attr>
+        <!--输入框的宽度-->
+        <attr name="vcv_et_width" format="dimension|reference" />
+        <!--输入框文字颜色-->
+        <attr name="vcv_et_text_color" format="color|reference" />
+        <!--输入框文字大小-->
+        <attr name="vcv_et_text_size" format="dimension|reference" />
+        <!--输入框背景-->
+        <attr name="vcv_et_bg" format="reference" />
+        <!--光标样式-->
+        <attr name="vcv_et_cursor" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiLineChooseItemTags">
+
+        <attr name="item_backgroundColor" format="reference|color" />
+        <attr name="item_selectedBackgroundColor" format="reference|color" />
+
+        <attr name="item_horizontalSpacing" format="dimension" />
+        <attr name="item_verticalSpacing" format="dimension" />
+        <attr name="item_horizontalPadding" format="dimension" />
+        <attr name="item_verticalPadding" format="dimension" />
+
+        <attr name="item_textColor" format="color" />
+        <attr name="item_selectedTextColor" format="reference|color" />
+        <attr name="item_textSize" format="dimension" />
+
+        <!-- 边框圆角半径-->
+        <attr name="item_radius" format="dimension" />
+        <attr name="item_bottomLeftRadius" format="dimension" />
+        <attr name="item_bottomRightRadius" format="dimension" />
+        <attr name="item_topLeftRadius" format="dimension" />
+        <attr name="item_topRightRadius" format="dimension" />
+        <!-- 边框颜色-->
+        <attr name="item_strokeColor" format="reference|color" />
+        <attr name="item_selectedStrokeColor" format="reference|color" />
+        <!-- 边框宽度-->
+        <attr name="item_strokeWidth" format="dimension" />
+        <!-- 是否多选-->
+        <attr name="item_multiChooseable" format="boolean" />
+        <attr name="item_singleLine" format="boolean" />
+        <!--是否可以点击-->
+        <attr name="item_click" format="boolean" />
+
+        <!--单位dp,为了适应wrap_content用integer-->
+        <attr name="item_width" format="integer|enum">
+            <enum name="wrap_content" value="-2" />
+            <enum name="match_parent" value="-1" />
+        </attr>
+        <attr name="item_height" format="integer|enum">
+            <enum name="wrap_content" value="-2" />
+            <enum name="match_parent" value="-1" />
+        </attr>
+        <attr name="item_maxEms" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="NineGridLayout">
+        <attr name="sapcing" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightView">
+        <attr name="mhv_HeightRatio" format="reference|float" />
+        <attr name="mhv_HeightDimen" format="reference|dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#212123"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="160dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/banner_explore_bg">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:riv_corner_radius="4dp"
+            android:scaleType="fitXY"
+            android:id="@+id/item_image"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_explore_mask_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="6dp"
+                android:text="32198人想去"
+                android:textColor="#a6ffffff"
+                android:textSize="12dp"
+                android:id="@+id/tv_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_num"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="6dp"
+                android:text="九眼桥"
+                android:textColor="#ffffffff"
+                android:textSize="14dp"
+                android:id="@+id/tv_name"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

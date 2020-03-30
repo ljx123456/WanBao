@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212123"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/navbar_button_back"
+            android:id="@+id/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我想去的"
+            android:textColor="#d9ffffff"
+            android:textSize="16dp"
+            />
+    </RelativeLayout>
+    
+    <com.androidkun.xtablayout.XTabLayout
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_centerVertical="true"
+        android:layout_column="2"
+        android:background="#212123"
+        app:xTabIndicatorColor="#FE849B"
+        app:xTabIndicatorHeight="0dp"
+        app:xTabIndicatorWidth="0dp"
+        app:xTabMode="fixed"
+        app:xTabSelectedTextColor="#FCC725"
+        app:xTabSelectedTextSize="20dp"
+
+        app:xTabTextColor="#A6ffffff"
+        app:xTabTextSize="16dp"
+        app:xTabTextSelectedBold="true"
+        app:xTabTextBold="false"
+        android:id="@+id/tab_want"></com.androidkun.xtablayout.XTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_want"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

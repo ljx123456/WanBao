@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:background="#212123">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        app:riv_oval="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_user_df"
+        android:id="@+id/item_likeHeader"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="56dp"
+        android:text="胡家大少爷"
+        android:textColor="#d9ffffff"
+        android:textSize="14dp"
+        android:id="@+id/item_likeName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_likeName"
+        android:layout_alignBottom="@+id/item_likeName"
+        android:layout_marginLeft="4dp"
+        android:textColor="#73ffffff"
+        android:textSize="11dp"
+        android:id="@+id/item_likeTime"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="28dp"
+        android:layout_below="@id/item_likeName"
+        android:layout_marginTop="8dp"
+        android:text="茶亦醉人何须酒书自香我何须花酒不醉人人自醉花不迷人人自迷吟成白雪心如素最到梅花香也清昔日浣沙今日恨玉人如许愿相亲还差八个字就够了"
+        android:textColor="#73ffffff"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="16dp"
+        android:id="@+id/item_likeContent"/>
+
+
+
+
+
+
+</RelativeLayout>

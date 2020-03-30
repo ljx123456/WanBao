@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#212123">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        app:riv_oval="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_user_df"
+        android:id="@+id/item_commentHeader"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="56dp"
+        android:text="胡家大少爷"
+        android:textColor="#73ffffff"
+        android:textSize="14dp"
+        android:id="@+id/item_commentName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_commentName"
+        android:layout_alignBottom="@+id/item_commentName"
+        android:layout_marginLeft="4dp"
+        android:text="3小时前"
+        android:textColor="#73ffffff"
+        android:textSize="11dp"
+        android:id="@+id/item_commentTime"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:gravity="center_vertical"
+        android:text="1.2k"
+        android:textColor="#73ffffff"
+        android:textSize="12dp"
+        android:drawableRight="@mipmap/dynamic_button_comment_like_nor"
+        android:drawablePadding="4dp"
+        android:id="@+id/item_commentLike"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="28dp"
+        android:layout_below="@id/item_commentName"
+        android:layout_marginTop="8dp"
+        android:text="茶亦醉人何须酒书自香我何须花酒不醉人人自醉花不迷人人自迷吟成白雪心如素最到梅花香也清昔日浣沙今日恨玉人如许愿相亲还差八个字就够了"
+        android:textColor="#d9ffffff"
+        android:textSize="16dp"
+        android:id="@+id/item_commentContent"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/item_commentContent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginRight="12dp"
+        android:background="#40000000"/>
+
+
+</RelativeLayout>

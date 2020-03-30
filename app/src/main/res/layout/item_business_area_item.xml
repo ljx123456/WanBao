@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2C2C2F">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="阿坝藏族枪族自治州"
+            android:textColor="#d9ffffff"
+            android:textSize="14dp"
+            android:id="@+id/tv_item_area"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/signin_region_selected"
+            android:scaleType="centerInside"
+            android:visibility="invisible"
+            android:id="@+id/iv_choose"/>
+    </RelativeLayout>
+
+</LinearLayout>

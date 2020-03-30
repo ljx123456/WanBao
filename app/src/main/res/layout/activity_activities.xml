@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="#212123"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/navbar_button_back"
+            android:id="@+id/iv_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="夜计划"
+            android:textColor="#d9ffffff"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/shoppage_button_navbar_search"
+            android:id="@+id/iv_search"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <com.androidkun.xtablayout.XTabLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+
+            app:xTabIndicatorColor="#FCC725"
+            app:xTabIndicatorHeight="0dp"
+            app:xTabIndicatorWidth="0dp"
+            app:xTabMode="fixed"
+            app:xTabSelectedTextColor="#FCC725"
+            app:xTabSelectedTextSize="16dp"
+            app:xTabTextColor="#A6ffffff"
+            app:xTabTextSize="14dp"
+            app:xTabTextSelectedBold="false"
+            app:xTabTextBold="false"
+            android:id="@+id/tab"/>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/layout_left_shadow_bg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/vp_activities"></android.support.v4.view.ViewPager>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/layout_top_shadow_bg"/>
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:id="@+id/layout_sort">-->
+        <!---->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="全部活动"-->
+            <!--android:textColor="#d9ffffff"-->
+            <!--android:textSize="14dp"-->
+            <!--android:drawableRight="@mipmap/shoppage_icon_topnav_more_nor"-->
+            <!--android:drawablePadding="1dp"-->
+            <!--android:id="@+id/tv_sort"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="8dp"-->
+            <!--android:background="@drawable/layout_top_shadow_bg"/>-->
+
+        <!--<android.support.v4.widget.SwipeRefreshLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/swip">-->
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/recy_activities"></android.support.v7.widget.RecyclerView>-->
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

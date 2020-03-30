@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#212123">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:maxLength="20"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="成都市"
+            android:textColor="#d9ffffff"
+            android:textSize="14dp"
+            android:id="@+id/tv_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="12dp"
+            android:text="中国四川"
+            android:textColor="#40ffffff"
+            android:textSize="12dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/tv_address"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="21dp"
+        android:text="累计打卡：2092次"
+        android:textColor="#40ffffff"
+        android:textSize="12dp"
+        android:id="@+id/tv_num"/>
+
+</RelativeLayout>

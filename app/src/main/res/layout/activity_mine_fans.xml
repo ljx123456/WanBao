@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#212123">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/navbar_button_back"
+            android:id="@+id/iv_back"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/layout_fans">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="我的粉丝"
+                android:textColor="#a6ffffff"
+                android:textSize="16dp"
+                android:id="@+id/tv_fans"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_fans"
+                android:layout_alignBottom="@+id/tv_fans"
+                android:layout_marginLeft="4dp"
+                android:text="2.8k"
+                android:textColor="#a6ffffff"
+                android:textSize="10dp"
+                android:id="@+id/tv_fans_num"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/layout_like">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="我关注的"
+                android:textColor="#fffcc725"
+                android:textSize="20dp"
+                android:id="@+id/tv_like"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_like"
+                android:layout_alignBottom="@+id/tv_like"
+                android:layout_marginLeft="4dp"
+                android:text="4.8k"
+                android:textColor="#fffcc725"
+                android:textSize="14dp"
+                android:id="@+id/tv_like_num"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <wanbao.yongchao.com.wanbao.view.MyViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_fans"></wanbao.yongchao.com.wanbao.view.MyViewPager>
+
+</LinearLayout>

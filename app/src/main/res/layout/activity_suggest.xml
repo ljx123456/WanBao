@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212123"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/navbar_button_back"
+            android:id="@+id/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="帮助建议"
+            android:textColor="#d9ffffff"
+            android:textSize="16dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/layout_suggest_bg">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="36dp"
+            android:theme="@style/inputStyle"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="您有什么想和我们说的吗？"
+            android:textColorHint="#40ffffff"
+            android:textColor="#d9ffffff"
+            android:textSize="14dp"
+            android:maxLength="500"
+            android:id="@+id/edit"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:text="0/500"
+            android:textColor="#40ffffff"
+            android:textSize="12dp"
+            android:id="@+id/tv_num"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="提交建议"
+        android:textSize="16dp"
+        android:textColor="#40ffffff"
+        android:enabled="false"
+        android:background="@drawable/tv_suggest_select_bg"
+        android:id="@+id/tv_suggest"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A000000"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/dialogOver"
+        android:background="#1A000000"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="304dp"
+        android:orientation="vertical"
+        android:background="@drawable/layout_business_type_bg">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请选择商家类型："
+                android:textColor="#d9ffffff"
+                android:textSize="14dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/signin_button_close"
+                android:scaleType="centerInside"
+                android:id="@+id/dialog_close"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:orientation="horizontal">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="145dp"
+                android:layout_height="match_parent"
+                android:id="@+id/recy_business_type"></android.support.v7.widget.RecyclerView>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#323236"
+                android:layout_weight="1"
+                android:id="@+id/recy_business_type_details"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

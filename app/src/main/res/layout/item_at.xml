@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#212123">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:riv_oval="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/drawable_choose_bg"
+            android:id="@+id/iv_choose"/>
+        
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_toRightOf="@+id/iv_choose"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            app:riv_oval="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_user_df"
+            android:id="@+id/iv_header"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_header"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:text="A哈哈哈哈"
+            android:textColor="#d9ffffff"
+            android:textSize="16dp"
+            android:id="@+id/tv_name"/>
+    </RelativeLayout>
+</LinearLayout>

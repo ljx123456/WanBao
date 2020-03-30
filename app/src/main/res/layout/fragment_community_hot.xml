@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/vp_community_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout"
+        android:background="@drawable/vp_community_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/layout_content"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:paddingLeft="12dp"
+                android:orientation="horizontal"
+                android:id="@+id/layout_topic"
+                android:visibility="gone">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginRight="30dp"
+
+                    android:id="@+id/recy_hot_topic"></android.support.v7.widget.RecyclerView>
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="41dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/layout_topic_down">-->
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="44dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/homepage_button_topic_arrow_lower"
+                    android:id="@+id/iv_topic_down"/>
+                <!--</RelativeLayout>-->
+            </RelativeLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:id="@+id/swip_community">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@drawable/vp_community_bg"
+                    android:id="@+id/recy_community"></android.support.v7.widget.RecyclerView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/scroll_topic"
+            android:visibility="gone">
+            <wanbao.yongchao.com.wanbao.view.tag.MyScrollView
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <wanbao.yongchao.com.wanbao.view.tag.MultiLineChooseLayout
+                        android:id="@+id/chooseTopic"
+                        style="@style/SingleChooseTopic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="100dp"
+                        android:layout_marginLeft="16dp" />
+                    <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"/>-->
+                </LinearLayout>
+            </wanbao.yongchao.com.wanbao.view.tag.MyScrollView>
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="41dp"-->
+            <!--android:layout_height="44dp"-->
+            <!--android:id="@+id/layout_topic_top">-->
+            <ImageView
+                android:layout_width="41dp"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/homepage_button_topic_arrow_top"
+                android:id="@+id/iv_topic_top"/>
+
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+    
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:id="@+id/layout_content"-->
+            <!--android:visibility="visible">-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="44dp"-->
+                <!--android:layout_marginLeft="12dp"-->
+                <!--android:orientation="horizontal">-->
+                <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="44dp"-->
+                    <!--android:layout_weight="1"-->
+
+                    <!--android:id="@+id/recy_hot_topic"></android.support.v7.widget.RecyclerView>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="26dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:id="@+id/layout_topic_down">-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="16dp"-->
+                        <!--android:layout_height="16dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:scaleType="centerInside"-->
+                        <!--android:src="@mipmap/homepage_button_topic_arrow_lower"-->
+                        <!--android:id="@+id/iv_topic_down"/>-->
+                <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+
+            <!---->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:id="@+id/scroll_topic"-->
+            <!--android:visibility="gone">-->
+            <!--<android.support.v4.widget.NestedScrollView-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1">-->
+                <!--<wanbao.yongchao.com.wanbao.view.tag.MultiLineChooseLayout-->
+                    <!--android:id="@+id/chooseTopic"-->
+                    <!--style="@style/SingleChooseTopic"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="66dp"-->
+                    <!--android:layout_marginLeft="16dp" />-->
+            <!--</android.support.v4.widget.NestedScrollView>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="26dp"-->
+                <!--android:layout_height="44dp"-->
+                <!--android:id="@+id/layout_topic_top">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="16dp"-->
+                    <!--android:layout_height="16dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:scaleType="centerInside"-->
+                    <!--android:src="@mipmap/homepage_button_topic_arrow_top"-->
+                    <!--android:id="@+id/iv_topic_top"/>-->
+
+            <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+
+
+
+        <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/scroll_topic"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:visibility="visible">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;&ndash;&gt;-->
+        <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

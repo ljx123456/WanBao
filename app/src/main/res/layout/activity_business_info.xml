@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#212123">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/navbar_button_back"
+            android:id="@+id/iv_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="个人资料"
+            android:textColor="#d9ffffff"
+            android:textSize="16dp"
+            android:id="@+id/tv_title"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@mipmap/signin_data_bg">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="84dp"
+                        android:layout_height="84dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="centerCrop"
+                        app:riv_oval="true"
+                        android:id="@+id/iv_header"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="轻触更换门脸照"
+                        android:textColor="#40ffffff"
+                        android:textSize="13dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="112dp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:orientation="vertical"
+                    android:background="#2C2C2F">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/layout_name">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="商家名称"
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:drawableRight="@mipmap/mine_icon_setting_right"
+                            android:drawablePadding="2dp"
+                            android:text=""
+                            android:textColor="#d9ffffff"
+                            android:textSize="14dp"
+                            android:id="@+id/tv_name"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="#40000000"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/layout_phone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="联系电话"
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:drawableRight="@mipmap/mine_icon_setting_right"
+                            android:drawablePadding="2dp"
+                            android:text=""
+                            android:textColor="#d9ffffff"
+                            android:textSize="14dp"
+                            android:id="@+id/tv_phone"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="#40000000"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/layout_time">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="营业时间"
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:drawableRight="@mipmap/mine_icon_setting_right"
+                            android:drawablePadding="2dp"
+                            android:text=""
+                            android:textColor="#d9ffffff"
+                            android:textSize="14dp"
+                            android:id="@+id/tv_time"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/layout_type">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="商家类型"
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:drawableRight="@mipmap/mine_icon_setting_right"
+                            android:drawablePadding="2dp"
+                            android:text=""
+                            android:textColor="#d9ffffff"
+                            android:textSize="14dp"
+                            android:id="@+id/tv_type"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/layout_money">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="人均消费"
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:drawableRight="@mipmap/mine_icon_setting_right"
+                            android:drawablePadding="2dp"
+                            android:gravity="center_vertical|right"
+                            android:singleLine="true"
+                            android:hint="点击设置消费信息"
+                            android:maxEms="16"
+                            android:ellipsize="start"
+                            android:textColor="#d9ffffff"
+                            android:textColorHint="#40ffffff"
+                            android:textSize="14dp"
+                            android:id="@+id/tv_money"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="144dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="24dp"
+                    android:background="#2C2C2F">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/layout_area">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="区域地址"
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:drawableRight="@mipmap/mine_icon_setting_right"
+                            android:drawablePadding="2dp"
+                            android:text=""
+                            android:textColor="#d9ffffff"
+                            android:textSize="14dp"
+                            android:id="@+id/tv_area"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="#40000000"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/layout_address">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="详细地址"
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:drawableRight="@mipmap/mine_icon_setting_right"
+                            android:drawablePadding="2dp"
+                            android:gravity="center_vertical|right"
+                            android:hint="请设置详细地址"
+                            android:textColorHint="#40ffffff"
+                            android:text=""
+                            android:textColor="#d9ffffff"
+                            android:textSize="14dp"
+                            android:id="@+id/tv_address"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="#40000000"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/layout_location">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="门店坐标"
+                            android:textColor="#a6ffffff"
+                            android:textSize="14dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:drawableRight="@mipmap/mine_icon_setting_right"
+                            android:drawablePadding="2dp"
+                            android:text=""
+                            android:textColor="#d9ffffff"
+                            android:textSize="14dp"
+                            android:id="@+id/tv_location"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="24dp"
+                    android:background="#2C2C2F"
+                    android:id="@+id/layout_signer">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="商家简介"
+                        android:textColor="#a6ffffff"
+                        android:textSize="14dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:drawableRight="@mipmap/mine_icon_setting_right"
+                        android:drawablePadding="2dp"
+                        android:singleLine="true"
+                        android:gravity="center_vertical|right"
+                        android:hint="添加商家简介，让大家更了解你"
+                        android:maxEms="16"
+                        android:ellipsize="start"
+                        android:textColor="#d9ffffff"
+                        android:textColorHint="#40ffffff"
+                        android:textSize="14dp"
+                        android:id="@+id/tv_signer"/>
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"/>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

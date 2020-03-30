@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="144dp"
+        android:background="@drawable/layout_explore_shop_bg"
+        android:layout_marginRight="12dp">
+        
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            app:riv_corner_radius_top_left="4dp"
+            app:riv_corner_radius_top_right="4dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/item_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_image"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="6dp"
+            android:text="言几又"
+            android:textColor="#d9ffffff"
+            android:textSize="14dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/tv_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="6dp"
+            android:text="成都·书店"
+            android:textColor="#a6ffffff"
+            android:textSize="11dp"
+            android:id="@+id/tv_type"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_alignBottom="@id/tv_type"
+            android:text="321m"
+            android:textColor="#a6ffffff"
+            android:textSize="11dp"
+            android:id="@+id/tv_distance"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
